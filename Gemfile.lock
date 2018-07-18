@@ -1,0 +1,17 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    coin_tracking (1.0.1)
+      httparty
+    httparty (0.16.2)
+      multi_xml (>= 0.5.2)
+    multi_xml (0.6.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  coin_tracking (= 1.0.1)
+
+BUNDLED WITH
+   1.16.1

@@ -1,0 +1,8 @@
+#
+# Copy this file to `config.yml` and edit its content
+#
+cointracking_api_key: your-cointracking-api-key
+cointracking_secret_key: your-cointracking-secret-key
+output_path: ~/Desktop                  # Where the output files are written
+read_from_cache: false                  # Generate the output files from the CoinTracking cache `cache_data_path`
+cache_data_path: /tmp/cointracking.yml  # CoinTracking cache file

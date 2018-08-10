@@ -1,17 +1,45 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activemodel (5.2.1)
+      activesupport (= 5.2.1)
+    activerecord (5.2.1)
+      activemodel (= 5.2.1)
+      activesupport (= 5.2.1)
+      arel (>= 9.0)
+    activesupport (5.2.1)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+    arel (9.0.0)
+    attribute_normalizer (1.2.0)
+    byebug (10.0.2)
     coin_tracking (1.0.1)
       httparty
+    concurrent-ruby (1.0.5)
     httparty (0.16.2)
       multi_xml (>= 0.5.2)
+    i18n (1.1.0)
+      concurrent-ruby (~> 1.0)
+    minitest (5.11.3)
     multi_xml (0.6.0)
+    rounding (1.0.1)
+    sqlite3 (1.3.13)
+    thread_safe (0.3.6)
+    tzinfo (1.2.5)
+      thread_safe (~> 0.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord
+  attribute_normalizer
+  byebug
   coin_tracking (= 1.0.1)
+  rounding
+  sqlite3
 
 BUNDLED WITH
    1.16.1

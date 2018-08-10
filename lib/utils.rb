@@ -1,6 +1,11 @@
 module Utils
   def formatted_time(time_value)
-    DateTime.strptime(time_value, '%s').strftime("%F %T %z")
+    format = "%F %T %z"
+    if time_value.is_a?(DateTime) || time_value.is_a?(Time)
+      time_value
+    else
+      DateTime.strptime(time_value, '%s')
+    end.strftime(format)
   end
 
   def format_output(obj)
@@ -19,7 +24,7 @@ module Utils
   end
 
   def eight_decimals(f)
-    f = f.is_a?(String) ? f.to_f : f
+    f = f.is_a?(String) || f.is_a?(BigDecimal) ? f.to_f : f
     sprintf('%.8f', f.round(8)) if f != 0
   end
 
